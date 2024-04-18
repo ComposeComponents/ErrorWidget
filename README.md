@@ -14,6 +14,7 @@ implementation "cl.emilym.compose:errorwidget:<latest>"
 
 ## Usage
 ```kotlin
+// message is optional, by default the message of the exception will be used
 ErrorWidget(
     IllegalArgumentException(),
     message = "This is a message",
