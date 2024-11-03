@@ -13,7 +13,7 @@ import cl.emilym.compose.units.rdp
 
 @Composable
 fun ErrorWidget(
-    exception: java.lang.Exception?,
+    exception: Exception?,
     message: String? = null,
     retry: (() -> Unit)? = null
 ) {
