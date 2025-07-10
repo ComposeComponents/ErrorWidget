@@ -7,11 +7,6 @@ _modules = new Listing {
 workflows = new Listing {
     (import("package://components.emilym.cl/actions/actions@0.1.14#/build-kmp-lib.pkl")) {
         targets = new Listing {
-            target.buildIosMultiplatformTarget("errorwidget", "x64")
-            target.buildIosMultiplatformTarget("errorwidget", "arm64")
-            target.buildIosMultiplatformTarget("errorwidget", "simulatorArm64")
-            target.buildDarwinMultiplatformTarget("errorwidget", "macos", "x64")
-            target.buildDarwinMultiplatformTarget("errorwidget", "macos", "arm64")
             target.buildAndroidMultiplatformTarget("errorwidget")
             target.buildJvmMultiplatformTarget("errorwidget")
             target.buildWasmJsMultiplatformTarget("errorwidget")
