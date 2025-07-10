@@ -48,66 +48,6 @@ jobs:
     strategy:
       matrix:
         configuration:
-        - command: :errorwidget:linkPodReleaseFrameworkIosX64
-          os: macos-latest
-          output0:
-            key: errorwidget-iosX64-framework
-            name: errorwidget-iosX64.framework
-            location: ./errorwidget/build/bin/iosX64/podReleaseFramework/errorwidget.framework
-            needsZip: true
-          output1:
-            key: errorwidget-iosX64-klib
-            name: errorwidget-iosX64.klib
-            location: ./errorwidget/build/classes/kotlin/iosX64/main/klib/errorwidget.klib
-            needsZip: false
-        - command: :errorwidget:linkPodReleaseFrameworkIosArm64
-          os: macos-latest
-          output0:
-            key: errorwidget-iosArm64-framework
-            name: errorwidget-iosArm64.framework
-            location: ./errorwidget/build/bin/iosArm64/podReleaseFramework/errorwidget.framework
-            needsZip: true
-          output1:
-            key: errorwidget-iosArm64-klib
-            name: errorwidget-iosArm64.klib
-            location: ./errorwidget/build/classes/kotlin/iosArm64/main/klib/errorwidget.klib
-            needsZip: false
-        - command: :errorwidget:linkPodReleaseFrameworkIosSimulatorArm64
-          os: macos-latest
-          output0:
-            key: errorwidget-iosSimulatorArm64-framework
-            name: errorwidget-iosSimulatorArm64.framework
-            location: ./errorwidget/build/bin/iosSimulatorArm64/podReleaseFramework/errorwidget.framework
-            needsZip: true
-          output1:
-            key: errorwidget-iosSimulatorArm64-klib
-            name: errorwidget-iosSimulatorArm64.klib
-            location: ./errorwidget/build/classes/kotlin/iosSimulatorArm64/main/klib/errorwidget.klib
-            needsZip: false
-        - command: :errorwidget:linkPodReleaseFrameworkMacosX64
-          os: macos-latest
-          output0:
-            key: errorwidget-macosX64-framework
-            name: errorwidget-macosX64.framework
-            location: ./errorwidget/build/bin/macosX64/podReleaseFramework/errorwidget.framework
-            needsZip: true
-          output1:
-            key: errorwidget-macosX64-klib
-            name: errorwidget-macosX64.klib
-            location: ./errorwidget/build/classes/kotlin/macosX64/main/klib/errorwidget.klib
-            needsZip: false
-        - command: :errorwidget:linkPodReleaseFrameworkMacosArm64
-          os: macos-latest
-          output0:
-            key: errorwidget-macosArm64-framework
-            name: errorwidget-macosArm64.framework
-            location: ./errorwidget/build/bin/macosArm64/podReleaseFramework/errorwidget.framework
-            needsZip: true
-          output1:
-            key: errorwidget-macosArm64-klib
-            name: errorwidget-macosArm64.klib
-            location: ./errorwidget/build/classes/kotlin/macosArm64/main/klib/errorwidget.klib
-            needsZip: false
         - command: :errorwidget:assembleRelease
           os: ubuntu-latest
           output0:
@@ -210,36 +150,6 @@ jobs:
     strategy:
       matrix:
         artifact:
-        - key: errorwidget-iosX64-framework
-          name: errorwidget-iosX64.framework.zip
-          mimeType: application/zip
-        - key: errorwidget-iosX64-klib
-          name: errorwidget-iosX64.klib
-          mimeType: application/zip
-        - key: errorwidget-iosArm64-framework
-          name: errorwidget-iosArm64.framework.zip
-          mimeType: application/zip
-        - key: errorwidget-iosArm64-klib
-          name: errorwidget-iosArm64.klib
-          mimeType: application/zip
-        - key: errorwidget-iosSimulatorArm64-framework
-          name: errorwidget-iosSimulatorArm64.framework.zip
-          mimeType: application/zip
-        - key: errorwidget-iosSimulatorArm64-klib
-          name: errorwidget-iosSimulatorArm64.klib
-          mimeType: application/zip
-        - key: errorwidget-macosX64-framework
-          name: errorwidget-macosX64.framework.zip
-          mimeType: application/zip
-        - key: errorwidget-macosX64-klib
-          name: errorwidget-macosX64.klib
-          mimeType: application/zip
-        - key: errorwidget-macosArm64-framework
-          name: errorwidget-macosArm64.framework.zip
-          mimeType: application/zip
-        - key: errorwidget-macosArm64-klib
-          name: errorwidget-macosArm64.klib
-          mimeType: application/zip
         - key: errorwidget-android-aar
           name: errorwidget-android.aar
           mimeType: application/zip

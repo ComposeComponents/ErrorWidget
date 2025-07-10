@@ -88,7 +88,7 @@ group = "cl.emilym.compose"
 
 android {
     namespace = "cl.emilym.compose.errorwidget"
-    compileSdk = 34
+    compileSdk = 35
     defaultConfig {
         minSdk = 21
     }
